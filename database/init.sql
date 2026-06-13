@@ -1,0 +1,48 @@
+CREATE TABLE IF NOT EXISTS calls (
+  id SERIAL PRIMARY KEY,
+  phone_number VARCHAR(30) NOT NULL,
+  call_duration INTEGER,
+  start_time TIMESTAMP,
+  end_time TIMESTAMP,
+  status VARCHAR(50) DEFAULT 'active',
+  category VARCHAR(100),
+  external_id VARCHAR(100),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS transcripts (
+  id SERIAL PRIMARY KEY,
+  call_id INTEGER NOT NULL REFERENCES calls(id) ON DELETE CASCADE,
+  speaker VARCHAR(10) NOT NULL,
+  text TEXT NOT NULL,
+  timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS prescriptions (
+  id SERIAL PRIMARY KEY,
+  patient_name VARCHAR(255) NOT NULL,
+  patient_phone VARCHAR(30) NOT NULL,
+  medication VARCHAR(255) NOT NULL,
+  gp_surgery VARCHAR(255) NOT NULL,
+  status VARCHAR(50) DEFAULT 'pending',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS patients (
+  id SERIAL PRIMARY KEY,
+  phone_number VARCHAR(30) UNIQUE NOT NULL,
+  name VARCHAR(255),
+  email VARCHAR(255),
+  history JSONB,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS callback_queue (
+  id SERIAL PRIMARY KEY,
+  patient_name VARCHAR(255) NOT NULL,
+  reason TEXT NOT NULL,
+  priority VARCHAR(50) DEFAULT 'normal',
+  status VARCHAR(50) DEFAULT 'pending',
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
