@@ -13,12 +13,19 @@ const classifyQuery = async (text) => {
     return { category: categorize(text), confidence: 0.7 };
   }
 
-  const response = await openai.responses.create({
+  const completion = await openai.chat.completions.create({
     model: 'gpt-4o-mini',
-    input: `Classify this pharmacy call query into one of: prescription_request, general_inquiry, appointment, callback. Return only the label. Query: ${text}`,
+    messages: [
+      {
+        role: 'system',
+        content: 'Classify pharmacy queries into one label: prescription_request, general_inquiry, appointment, callback. Return only the label.',
+      },
+      { role: 'user', content: text },
+    ],
+    temperature: 0,
   });
 
-  const output = response.output_text?.trim();
+  const output = completion.choices?.[0]?.message?.content?.trim();
   return { category: output || categorize(text), confidence: 0.9 };
 };
 
@@ -33,12 +40,16 @@ const generateResponse = async ({ category, query }) => {
     return canned[category] || canned.general_inquiry;
   }
 
-  const response = await openai.responses.create({
+  const completion = await openai.chat.completions.create({
     model: 'gpt-4o-mini',
-    input: `You are a pharmacy assistant. Respond clearly and briefly to this patient query: ${query}`,
+    messages: [
+      { role: 'system', content: 'You are a concise UK pharmacy assistant helping patients.' },
+      { role: 'user', content: query },
+    ],
+    temperature: 0.4,
   });
 
-  return response.output_text?.trim() || 'Thank you for calling Fairgreen Pharmacy. How can I help further?';
+  return completion.choices?.[0]?.message?.content?.trim() || 'Thank you for calling Fairgreen Pharmacy. How can I help further?';
 };
 
 module.exports = { classifyQuery, generateResponse };

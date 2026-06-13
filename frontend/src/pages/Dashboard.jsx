@@ -27,7 +27,7 @@ export default function DashboardPage() {
   };
 
   useEffect(() => {
-    loadData().catch(() => undefined);
+    loadData().catch((err) => console.error('Failed to load dashboard data:', err));
     socket.connect();
     socket.on('call:update', loadData);
 

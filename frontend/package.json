@@ -12,8 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "private": "true",
+  "private": true,
   "dependencies": {
     "axios": "^1.17.0",
     "react": "^19.2.7",
