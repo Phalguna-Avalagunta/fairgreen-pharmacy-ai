@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920">
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f8faf7"/><stop offset="1" stop-color="#d8e8df"/></linearGradient></defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <text x="540" y="170" text-anchor="middle" fill="#12372a" font-family="Arial" font-size="52" font-weight="700">CARE FOR EVERYDAY HEALTH</text>
+  <g font-family="Arial" font-size="34" font-weight="700" fill="#12372a">
+    <rect x="70" y="300" width="940" height="250" rx="28" fill="#12372a"/><text x="540" y="410" text-anchor="middle" fill="#fff" font-size="45">BLOOD PRESSURE CHECKS</text><circle cx="320" cy="485" r="28" fill="#72d39a"/><rect x="348" y="468" width="180" height="34" rx="12" fill="#72d39a"/>
+    <rect x="70" y="585" width="940" height="250" rx="28" fill="#12372a"/><text x="540" y="695" text-anchor="middle" fill="#fff" font-size="45">EAR + NOSE PIERCING</text><circle cx="450" cy="770" r="46" fill="#c49a72"/><circle cx="630" cy="770" r="46" fill="#c49a72"/><circle cx="450" cy="770" r="8" fill="#72d39a"/><circle cx="630" cy="770" r="8" fill="#72d39a"/>
+    <rect x="70" y="870" width="940" height="250" rx="28" fill="#12372a"/><text x="540" y="980" text-anchor="middle" fill="#fff" font-size="45">EAR WAX REMOVAL</text><path d="M400 1040q140-140 280 0" fill="none" stroke="#72d39a" stroke-width="18"/>
+    <rect x="70" y="1155" width="940" height="250" rx="28" fill="#12372a"/><text x="540" y="1265" text-anchor="middle" fill="#fff" font-size="45">FLU + COVID SERVICES</text><circle cx="540" cy="1340" r="45" fill="#72d39a"/>
+    <rect x="70" y="1440" width="940" height="250" rx="28" fill="#12372a"/><text x="540" y="1550" text-anchor="middle" fill="#fff" font-size="45">HEALTHCARE CONSULTATIONS</text><rect x="470" y="1580" width="140" height="70" rx="16" fill="#72d39a"/>
+  </g>
+</svg>

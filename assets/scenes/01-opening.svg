@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#a8c9cb"/><stop offset="1" stop-color="#eef4ef"/></linearGradient>
+    <linearGradient id="glass" x2="0" y2="1"><stop stop-color="#dff1ea"/><stop offset="1" stop-color="#84aaa3"/></linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#sky)"/>
+  <rect y="1180" width="1080" height="740" fill="#b8beb7"/>
+  <rect x="120" y="500" width="840" height="820" rx="24" fill="#f8faf7"/>
+  <rect x="120" y="500" width="840" height="120" fill="#12372a"/>
+  <text x="540" y="580" text-anchor="middle" fill="#fff" font-family="Arial" font-size="58" font-weight="700">FAIRGREEN PHARMACY</text>
+  <rect x="220" y="620" width="640" height="700" fill="#e6eee8"/>
+  <rect x="220" y="620" width="640" height="700" fill="url(#glass)" opacity=".75"/>
+  <rect x="500" y="620" width="12" height="700" fill="#fff"/>
+  <rect x="220" y="620" width="640" height="12" fill="#fff"/>
+  <circle cx="540" cy="760" r="92" fill="#12372a"/>
+  <path d="M540 670l75 90-75 90-75-90z" fill="#72d39a"/>
+  <rect x="250" y="820" width="170" height="500" fill="#eef3ef" opacity=".8"/>
+  <rect x="660" y="820" width="170" height="500" fill="#eef3ef" opacity=".8"/>
+  <ellipse cx="540" cy="1420" rx="330" ry="54" fill="#66736d" opacity=".25"/>
+  <circle cx="540" cy="1395" r="52" fill="#8e5a3d"/>
+  <path d="M480 1440q60-95 120 0l40 240h-200z" fill="#12372a"/>
+  <rect x="512" y="1438" width="56" height="155" rx="28" fill="#8e5a3d"/>
+  <rect x="470" y="1660" width="145" height="210" rx="70" fill="#263f35"/>
+  <text x="540" y="180" text-anchor="middle" fill="#12372a" font-family="Arial" font-size="74" font-weight="700">YOUR HEALTH.</text>
+  <text x="540" y="270" text-anchor="middle" fill="#2d7659" font-family="Arial" font-size="74" font-weight="700">OUR PRIORITY.</text>
+  <text x="540" y="360" text-anchor="middle" fill="#12372a" font-family="Arial" font-size="42">Welcome to Fairgreen Pharmacy</text>
+</svg>

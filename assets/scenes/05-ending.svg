@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920">
+  <defs><radialGradient id="bg"><stop stop-color="#fff"/><stop offset="1" stop-color="#dceae2"/></radialGradient></defs>
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <rect x="70" y="180" width="940" height="1560" rx="40" fill="#12372a"/>
+  <circle cx="540" cy="430" r="118" fill="#72d39a"/>
+  <path d="M540 340l70 84-70 84-70-84z" fill="#12372a"/>
+  <text x="540" y="620" text-anchor="middle" fill="#fff" font-family="Arial" font-size="82" font-weight="700">FAIRGREEN</text>
+  <text x="540" y="700" text-anchor="middle" fill="#72d39a" font-family="Arial" font-size="62" font-weight="700">PHARMACY</text>
+  <text x="540" y="880" text-anchor="middle" fill="#fff" font-family="Arial" font-size="42" font-weight="700">Follow us on social media!</text>
+  <text x="540" y="1010" text-anchor="middle" fill="#72d39a" font-family="Arial" font-size="38" font-weight="700">Instagram</text>
+  <text x="540" y="1065" text-anchor="middle" fill="#fff" font-family="Arial" font-size="42">@pharmacyfairgreen</text>
+  <text x="540" y="1180" text-anchor="middle" fill="#72d39a" font-family="Arial" font-size="38" font-weight="700">Facebook</text>
+  <text x="540" y="1235" text-anchor="middle" fill="#fff" font-family="Arial" font-size="42">Fairgreen Pharmacy</text>
+  <text x="540" y="1360" text-anchor="middle" fill="#fff" font-family="Arial" font-size="44" font-weight="700">020 8648 2112</text>
+  <text x="540" y="1430" text-anchor="middle" fill="#fff" font-family="Arial" font-size="36">info@fairgreenpharmacy.co.uk</text>
+  <text x="540" y="1580" text-anchor="middle" fill="#72d39a" font-family="Arial" font-size="42" font-weight="700">Stay Connected. Stay Healthy.</text>
+</svg>

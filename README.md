@@ -12,3 +12,6 @@ See `prompts/fairgreen-pharmacy-instagram-reel.txt`.
 ### Promotional advertisement
 
 See `prompts/fairgreen-pharmacy-promotional-ad.txt`.
+
+The cinematic 38-second cut is available at
+`output/fairgreen-pharmacy-cinematic-ad.mp4`.
