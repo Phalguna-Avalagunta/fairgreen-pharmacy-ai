@@ -8,3 +8,7 @@ AI-powered pharmacy call management system
 ### Instagram reel prompt
 
 See `prompts/fairgreen-pharmacy-instagram-reel.txt`.
+
+### Promotional advertisement
+
+See `prompts/fairgreen-pharmacy-promotional-ad.txt`.
